@@ -1,0 +1,59 @@
+{
+  "name": "trip-planner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon --watch backend/src --ext ts --exec \"npx ts-node backend/src/server.ts\"",
+    "dev:swagger": "npm run swagger && npm run dev",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "swagger": "cd backend/src && npx ts-node swagger-autogen.ts",
+    "swagger:watch": "cd backend/src && npx nodemon --watch routes --ext ts --exec \"npx ts-node swagger-autogen-advanced.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhruv7201/trip-planner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dhruv7201/trip-planner/issues"
+  },
+  "homepage": "https://github.com/Dhruv7201/trip-planner#readme",
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "bcryptjs": "^3.0.2",
+    "bull": "^4.16.5",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-openapi-validator": "^5.6.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "redis": "^5.8.2",
+    "reflect-metadata": "^0.2.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.5.2",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "nodemon": "^3.1.10",
+    "prisma": "^6.16.2",
+    "swagger-autogen": "^2.23.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
