@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon --watch backend/src --ext ts --exec \"npx ts-node backend/src/server.ts\"",
+    "dev": "npx nodemon --watch backend/src --ext ts --exec \"npx ts-node src/server.ts\"",
     "dev:swagger": "npm run swagger && npm run dev",
     "build": "tsc",
     "start": "node dist/server.js",

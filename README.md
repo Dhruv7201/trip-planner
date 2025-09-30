@@ -73,7 +73,7 @@ http://localhost:3000/docs
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-org/izh-backend.git
-   cd izh-backend
+   cd izh-backend/backend
    ```
 
 2. Install dependencies:
